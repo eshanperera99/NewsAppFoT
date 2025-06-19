@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello!"
+            android:textColor="#FF6B35"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup to get Started"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email address*"
+            android:background="@drawable/rounded_button_bg"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Full Name Field -->
+        <EditText
+            android:id="@+id/fullNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Full name*"
+            android:background="@drawable/rounded_button_bg"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Password Field with eye icon -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password*"
+                android:background="@drawable/rounded_button_bg"
+                android:padding="16dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:inputType="textPassword"/>
+
+            <ImageView
+                android:id="@+id/togglePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_visibility_off"/>
+        </RelativeLayout>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF6B35"
+            android:text="SIGN UP"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Welcome Back Box -->
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            android:background="#FF6B35"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back!"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To keep connected with us please sign in"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:textColorHint="#FF6B35"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

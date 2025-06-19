@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ✅ BACK ARROW -->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Back"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ✅ HEADER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ✅ SWITCH -->
+        <Switch
+            android:id="@+id/notificationsSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Notifications"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ✅ BUTTONS -->
+        <Button
+            android:id="@+id/changeNameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Name"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/changePasswordButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/emailAddressButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/signOutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"/>
+    </LinearLayout>
+</ScrollView>

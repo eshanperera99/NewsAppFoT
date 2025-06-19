@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a1a1a">
+
+    <!-- Status bar spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="#000000" />
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Menu icon (optional) -->
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/ic_menu"
+                android:contentDescription="Menu" />
+
+            <!-- Category Tabs -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/tabTech"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tech"
+                    android:textColor="#ff6b35"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tabSport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sport"
+                    android:textColor="#888888"
+                    android:textSize="16sp"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tabAcademic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Academic"
+                    android:textColor="#888888"
+                    android:textSize="16sp"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tabFacultyEvents"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Faculty Events"
+                    android:textColor="#888888"
+                    android:textSize="16sp"
+                    android:paddingBottom="8dp" />
+            </LinearLayout>
+
+            <!-- Underline (optional) -->
+            <View
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:background="#ff6b35"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Featured Banner -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/featuredImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/uoc_background" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Top Stories header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Stories"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="See all"
+                    android:textColor="#888888"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!-- RecyclerView for dynamic stories -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/topStoriesRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginBottom="32dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ✅ BottomNavigationView linked to your menu -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2a2a2a"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/selector_nav_item_color"
+        app:itemTextColor="@color/selector_nav_item_color" />
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Image with Overlay Text -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <ImageView
+                android:id="@+id/bg_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/colombo_background" />
+
+            <!-- Overlay Text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center"
+                android:background="#80000000">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/uoc_logo"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THE UNIVERSITY OF COLOMBO"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RANKED"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01"
+                    android:textColor="#FFEB3B"
+                    android:textSize="64sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IN SRI LANKA"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Bottom Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="24dp"
+            android:layout_marginTop="-24dp"
+            android:elevation="4dp"
+            android:layout_margin="12dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:backgroundTintMode="src_in">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get The Latest News And Updates"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stay Updated with All the Latest from Campus to Classrooms. Your One-Stop Source for University News, Events, and Announcements, Right at Your Fingertips."
+                android:layout_marginTop="8dp"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/exploreBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore ➜"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FF9800"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

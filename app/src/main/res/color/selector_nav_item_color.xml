@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Active (selected) item color -->
+    <item android:color="#FF6B35" android:state_checked="true"/>
+
+    <!-- Default (unselected) item color -->
+    <item android:color="#AAAAAA"/>
+
+</selector>
